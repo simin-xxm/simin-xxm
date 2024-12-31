@@ -1,0 +1,10 @@
+**/node_modules
+
+docs/.vuepress/.cache
+docs/.vuepress/.temp
+docs/.vuepress/dist
+simin_key
+simin_key.pub
+
+.DS_Store
+*.log
