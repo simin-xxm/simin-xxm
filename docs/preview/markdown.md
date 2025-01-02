@@ -1,7 +1,7 @@
 ---
 title: Markdown
 tags:
-  - markdown
+  - simins
 createTime: 2024/12/30 11:08:23
 permalink: /article/fie9kkbj/
 ---
@@ -49,8 +49,8 @@ H~2~O
 2. 有序列表2
 3. 有序列表3
 
-- [ ] 任务列表1
-- [ ] 任务列表2
+- [x] 任务列表1
+- [x] 任务列表2
 - [x] 任务列表3
 - [x] 任务列表4
 

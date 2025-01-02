@@ -6,7 +6,7 @@ import { notes } from './notes'
  * @see https://theme-plume.vuejs.press/config/basic/
  */
 export default defineThemeConfig({
-  logo: '/home/avatar.jpg',
+  logo: '/images/avatar.jpg',
 
   appearance: true,  // 配置 深色模式
 
@@ -41,7 +41,7 @@ export default defineThemeConfig({
    * @see https://theme-plume.vuejs.press/config/basic/#profile
    */
   profile: {
-    avatar: '/home/avatar.jpg',
+    avatar: '/images/avatar.jpg',
     name: 'simin',
     description: 'Veni, vidi, vici',
     circle: true,

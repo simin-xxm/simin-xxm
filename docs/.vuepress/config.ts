@@ -3,11 +3,11 @@ import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
 
 export default defineUserConfig({
-  base: '/simin-blog/',
+  base: '/simin-xxm/',
   lang: 'zh-CN',
   title: "simin's blog",
   description: 'Veni, vidi, vici',
-  head: [['link', { rel: 'icon', href: '/home/avatar.jpg' }]],
+  head: [['link', { rel: 'icon', href: '/simin-xxm/images/avatar.jpg' }]],
 
   bundler: viteBundler(),
   shouldPrefetch: false, // 站点较大，页面数量较多时，不建议启用
@@ -22,10 +22,19 @@ export default defineUserConfig({
     // docsBranch: '',
 
     /* 页内信息 */
-    // editLink: true,
-    // lastUpdated: true,
-    // contributors: true,
-    // changelog: false,
+    editLink: true,
+    lastUpdated: { formatOptions: { dateStyle: 'short', timeStyle: 'short' } },
+    contributors: {
+      mode: 'block',
+      avatar: true
+    },
+    changelog: {
+      maxCount: 10,
+      repoUrl: 'https://github.com/simin-xxm/simin-xxm',
+      commitUrlPattern: ':simin-xxm/commit/:hash',
+      issueUrlPattern: ':simin-xxm/issues/:issue',
+      tagUrlPattern: ':simin-xxm/releases/tag/:tag'
+    },
 
     /**
      * 博客
@@ -61,6 +70,7 @@ export default defineUserConfig({
     },
 
     plugins: {
+      git: true,
       /**
        * Shiki 代码高亮
        * @see https://theme-plume.vuejs.press/config/plugins/code-highlight/
@@ -94,13 +104,13 @@ export default defineUserConfig({
        * markdown enhance
        * @see https://theme-plume.vuejs.press/config/plugins/markdown-enhance/
        */
-      // markdownEnhance: {
-      //   demo: true,
-      //   chartjs: true,
-      //   echarts: true,
-      //   mermaid: true,
-      //   flowchart: true,
-      // },
+      markdownEnhance: {
+        demo: true,
+        // chartjs: true,
+        // echarts: true,
+        // mermaid: true,
+        // flowchart: true,
+      },
 
       /**
        *  markdown power
@@ -152,17 +162,17 @@ export default defineUserConfig({
        * 评论 comments
        * @see https://theme-plume.vuejs.press/guide/features/comments/
        */
-      // comment: {
-      //   provider: 'Artalk', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
-      //   comment: true,
-      //   repo: '',
-      //   repoId: '',
-      //   category: '',
-      //   categoryId: '',
-      //   mapping: 'pathname',
-      //   reactionsEnabled: true,
-      //   inputPosition: 'top',
-      // },
+      comment: {
+        provider: 'Giscus', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
+        comment: true,
+        repo: 'simin-xxm/simin-xxm',
+        repoId: 'R_kgDONkLS2A',
+        category: 'Announcements',
+        categoryId: 'DIC_kwDONkLS2M4Cln5f',
+        mapping: 'pathname',
+        reactionsEnabled: true,
+        inputPosition: 'top',
+      },
     },
 
     /**
