@@ -1,14 +1,16 @@
 ---
 title: JavaScript 上下文
+tags:
+  - JavaScript
 createTime: 2025/01/02 09:16:38
 permalink: /article/ksjbv9cr/
-cover: {url: '/simin-xxm/images/上下文.png',compact: true, layout: 'odd-left', ratio: '2:1'}
+cover: {url: '/simin-xxm/images/上下文.png'}
 ---
 
 ## 什么是上下文？
 
 在 JavaScript 中，上下文（Context）是指代码在运行时的执行环境，它决定了 `this` 的值是什么。上下文是动态的，可以随着函数的调用方式改变。
-
+<!-- more -->
 很多开发者经常弄混作用域和上下文，似乎两者是一个概念。但并非如此。
 
 作用域是[JavaScript 作用域详解](./JavaScript%20作用域详解.md)所解释的，而上下文通常涉及到你代码某些特殊部分中的this值。作用域指的是变量的可见性，而上下文指的是在相同的作用域中的this的值。我们当然也可以使用函数方法改变上下文，在全局作用域中，上下文总是 Window 对象。

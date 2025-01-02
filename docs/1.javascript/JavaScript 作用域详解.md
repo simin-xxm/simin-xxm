@@ -4,15 +4,14 @@ tags:
   - JavaScript
 createTime: 2024/12/31 15:29:24
 permalink: /article/9xi55js6/
-cover: {url: '/simin-xxm/images/作用域.png',compact: true, ratio: '2:1'}
+cover: {url: '/simin-xxm/images/作用域.png'}
 ---
 
 ## 什么是作用域？
 
 作用域是指程序中定义变量的区域，它决定了变量的可访问性。简单来说，作用域定义了代码中哪些部分可以访问特定变量。
-
+<!-- more -->
 在 JavaScript 中，作用域是通过函数和代码块来划分的。理解作用域有助于编写高效、可维护的代码。
-
 
 ## 作用域的类型
 
