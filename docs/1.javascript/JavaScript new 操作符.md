@@ -9,7 +9,7 @@ permalink: /article/8fbcq28x/
 
 [JavaScript 原型](./JavaScript%20原型.md)
 
-[JavaScript 作用域详解](./JavaScript%20作用域详解.md)
+[JavaScript 作用域](./JavaScript%20作用域.md)
 
 [JavaScript 上下文](./JavaScript%20上下文.md) 
 :::

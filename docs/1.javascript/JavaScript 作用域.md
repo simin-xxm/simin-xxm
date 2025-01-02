@@ -1,5 +1,5 @@
 ---
-title: JavaScript 作用域详解
+title: JavaScript 作用域
 tags:
   - JavaScript
 createTime: 2024/12/31 15:29:24
